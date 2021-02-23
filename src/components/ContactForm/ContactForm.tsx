@@ -103,7 +103,8 @@ export const ContactForm = () => {
             email,
             fullName,
             mobileNum,
-            JamaathChoice: activeChoice
+            JamaathChoice: activeChoice,
+            time: new Date().toUTCString()
         })
 
         //jamaath counts stored in firebase
