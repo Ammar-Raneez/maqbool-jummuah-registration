@@ -88,7 +88,7 @@ export const ContactForm = () => {
     const formSubmission = async (event:any) => {
         setShowModal(false);
 
-        await axios.post("/new-registration", {
+        await axios.post("/registration", {
             activeChoice,
             idNum,
             email,
