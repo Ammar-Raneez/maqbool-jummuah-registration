@@ -1,5 +1,6 @@
 import firebase from 'firebase'
 
+//mongodb database
 const firebaseConfig = {
     apiKey: "AIzaSyDWaxvmenenjzsU32y-C3amMa0TR1AbyK4",
     authDomain: "maqbool-registration-ctns-new.firebaseapp.com",
@@ -10,6 +11,7 @@ const firebaseConfig = {
     measurementId: "G-523GFYZPMX"
 };
 
+//firebase database
 // const firebaseConfig = {
 //     apiKey: "AIzaSyDWtjoIL3RjXi9id0RYwx11J3nZKSWDBDU",
 //     authDomain: "maqbool-jumuah-registration.firebaseapp.com",

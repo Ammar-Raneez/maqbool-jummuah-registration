@@ -88,6 +88,7 @@ export const ContactForm = () => {
     const formSubmission = async (event:any) => {
         setShowModal(false);
 
+        //mongodb
         await axios.post("/registration", {
             activeChoice,
             idNum,
@@ -97,6 +98,7 @@ export const ContactForm = () => {
             timestamp: new Date().toUTCString()
         })
 
+        //firebase
         // db.collection("Registered")
         // .add({
         //     idNum,
@@ -108,7 +110,6 @@ export const ContactForm = () => {
         // })
 
         //jamaath counts stored in firebase
-        //jamaath records stored in MongoDB
         //delete all records and reupdate values
         db.collection("Jamaath Counts")
         .get()
