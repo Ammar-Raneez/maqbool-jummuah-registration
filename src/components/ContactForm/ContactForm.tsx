@@ -88,23 +88,23 @@ export const ContactForm = () => {
     const formSubmission = async (event:any) => {
         setShowModal(false);
 
-        await axios.post("/registration", {
-            activeChoice,
-            idNum,
-            email,
-            mobileNum,
-            fullName,
-            timestamp: new Date().toUTCString()
-        })
-
-        // db.collection("Registered")
-        // .add({
+        // await axios.post("/registration", {
+        //     activeChoice,
         //     idNum,
         //     email,
-        //     fullName,
         //     mobileNum,
-        //     JamaathChoice: activeChoice
+        //     fullName,
+        //     timestamp: new Date().toUTCString()
         // })
+
+        db.collection("Registered")
+        .add({
+            idNum,
+            email,
+            fullName,
+            mobileNum,
+            JamaathChoice: activeChoice
+        })
 
         //jamaath counts stored in firebase
         //jamaath records stored in MongoDB
